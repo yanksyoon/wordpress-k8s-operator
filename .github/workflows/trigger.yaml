@@ -1,0 +1,8 @@
+name: Trigger secrets tests
+
+on: push
+
+jobs:
+  integration-test-with-secrets:
+    uses: ./.github/workflows/integration_test_secrets.yaml
+    secrets: inherit
